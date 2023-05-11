@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="Calavera" size="1.000000 1.000000" />
+    <ImageTarget name="Calacas_Chidas" size="0.500000 0.493363" />
+  </Tracking>
+</QCARConfig>
