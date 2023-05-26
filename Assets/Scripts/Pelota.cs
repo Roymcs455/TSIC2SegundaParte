@@ -4,19 +4,11 @@ using UnityEngine;
 
 public class Pelota : MonoBehaviour
 {
-    public World world;
-    // Start is called before the first frame update
-    void Start()
+    public World world;    
+    public void Start()
     {
         
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    
     public void Reset()
     {
         this.GetComponent<Rigidbody>().velocity = Vector3.zero;
@@ -36,9 +28,8 @@ public class Pelota : MonoBehaviour
         Debug.LogFormat("{0} trigger exit {1}",this, other);
         if(other.name == "Container")
         {
+            world.LoseLive();
             Reset();
-        }
-        
+        } 
     }
-    
 }
